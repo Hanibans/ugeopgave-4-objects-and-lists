@@ -1,0 +1,28 @@
+@startuml
+
+class Player {
+    String name
+    int skillLevel
+
+    Player(String name, int skillLevel)
+    String toString()
+}
+
+class Team {
+    String teamName
+    ArrayList<Player> players
+
+    Team(String teamName)
+    void addPlayer(Player p)
+    double getAverageSkill()
+    void printTeam()
+    void compete(Team opponent)
+}
+
+class Main {
+    void main()
+}
+
+Team *-- Player
+
+@enduml

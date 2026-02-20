@@ -1,0 +1,29 @@
+@startuml
+
+class BankAccount {
+    String owner
+    double balance
+    ArrayList<Transaction> transactions
+
+    BankAccount(String owner, double startBalance)
+    void deposit(double amount)
+    void withdraw(double amount)
+    void printTransactionHistory()
+    double getBalance()
+}
+
+class Transaction {
+    String type
+    double amount
+
+    Transaction(String type, double amount)
+    String toString()
+}
+
+class Main {
+    void main()
+}
+
+BankAccount *-- Transaction
+
+@enduml

@@ -11,7 +11,6 @@ public class BankAccount {
         this.owner = owner;
         this.balance = startBalance;
         this.transactions = new ArrayList<>();
-        transactions.add(new Transaction("deposit", startBalance));
     }
 
     void deposit(double amount) {
