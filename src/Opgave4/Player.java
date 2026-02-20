@@ -9,6 +9,7 @@ public class Player {
         this.skillLevel = skillLevel;
     }
 
+    @Override
     public String toString() {
         return name + " (skill: " + skillLevel + ")";
     }
